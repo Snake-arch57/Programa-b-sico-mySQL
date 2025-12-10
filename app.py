@@ -2,9 +2,9 @@ import pymysql.cursors
  
 def open_connection():
     return pymysql.connect(host='localhost',
-                           user='root',
-                           password='01102006Pedro$',
-                           database='api',
+                           user='seu usuário',
+                           password='sua senha',
+                           database='seu banco de dados',
                            cursorclass=pymysql.cursors.DictCursor)
 
 logado = False
@@ -112,3 +112,4 @@ while True:
         print("Fechando")
         conexao.close()
         break
+
